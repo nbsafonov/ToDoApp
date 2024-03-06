@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mintcream;
+    ;
+}
+
+.wrapper {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.main__title {
+    display: block;
+    font-family: 'Ubuntu';
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.subtitle {
+    display: block;
+    font-family: 'Ubuntu';
+    margin-bottom: 55px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.clear__list {
+    display: block;
+    text-align: center;
+    padding: 35px 0px 35px;
+    border: 1.5px solid teal;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.pic>i {
+    font-size: 50px;
+    color: green;
+}
+
+.clear__list__title {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(203, 199, 199);
+    margin-top: 15px;
+}
+
+.list {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+li {
+    max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1.5px solid teal;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+.text__inner {
+    width: 88%;
+    display: block;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    text-align: justify;
+    word-wrap: break-word;
+    justify-content: space-between;
+
+}
+
+.text__inner--done {
+    text-decoration: line-through;
+}
+
+.inner__btns {
+    width: 12%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.btn__inner__comp,
+.btn__inner__dell {
+    height: min-content;
+    display: block;
+    font-size: 18px;
+    border: 1px solid teal;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 2px;
+    background-color: rgb(234, 237, 236);
+}
+
+.btn__inner__comp>i,
+.btn__inner__dell>i {
+    pointer-events: none;
+}
+
+.btn__inner__comp:hover,
+.btn__inner__dell:hover {
+    background-color: rgb(191, 224, 213);
+    ;
+}
+
+
+.btn__inner__comp {
+    color: green;
+}
+
+.btn__inner__dell {
+    color: red;
+}
+
+.func {
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1.5px solid teal;
+}
+
+.write__q {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+}
+
+.input {
+    height: 40px;
+    border: 1px solid;
+    border-color: grey;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+
+}
+
+input:focus {
+    outline: 1.5px solid teal;
+}
+
+.descript {
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    color: rgb(82, 79, 79);
+}
+
+.addButton {
+    cursor: pointer;
+    align-self: start;
+    background: none;
+    padding: 12px;
+    border: 1.5px solid teal;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    color: teal;
+    font-weight: 700;
+    background-color: rgb(234, 237, 236);
+
+}
+
+.addButton:hover {
+    background-color: rgb(191, 224, 213)
+}
+
+.dellAll {
+    cursor: pointer;
+    background: none;
+    align-self: self-end;
+    margin-top: 15px;
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: teal;
+    color: white;
+}
+
+.dellAll:hover {
+    background-color: rgb(191, 224, 213);
+    color: black;
+}
+
+@media (max-width: 572px) {
+    .text__inner {
+        width: 85%;
+    }
+}
+
+@media (max-width: 491px) {
+    .text__inner {
+        width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .text__inner {
+        width: 75%;
+    }
+}
